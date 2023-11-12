@@ -15,8 +15,6 @@ const Commande = sequelize.define('Commande', {
 
 });
 
-Produit.belongsToMany(Commande, { through: 'CommandeProduit' });
-Commande.belongsToMany(Produit, { through: 'CommandeProduit' });
 
 Commande.hasMany(DetailsCommande);
 DetailsCommande.belongsTo(Commande);

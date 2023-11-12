@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import getProduit from '../services/produit';
+import produitService from '../services/produit';
 import cartService from '../services/panier';
 import listProduit from '../css/listProduit.css';
 import authService from '../services/utilisateur';
@@ -15,7 +15,7 @@ const Home = () => {
  
     const fetchProduits = async () => {
       try {
-        const productData = await getProduit.getProduits();
+        const productData = await produitService.getProduits();
         setProduits(productData);
       } catch (error) {
         console.error('Erreur lors de la récupération des produits :', error);

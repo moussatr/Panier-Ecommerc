@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import LogoutPage from './logout';
 import ListCommande from './pages/listCommande';
 import DetailsCommande from './pages/detailsCommande';
+import CreateProductPage from './pages/creerProduit';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false); // État pour gérer l'authentification
@@ -33,6 +34,7 @@ function App() {
           <>
             <Route path='/home' element={<Home />} /> 
             <Route path='/panier' element={<Panier />} />
+            <Route path='/create-produit' element={<CreateProductPage />} />
             <Route path='/list-commande' element={<ListCommande />} />
             <Route path='/details-commande/:commandeId' element={<DetailsCommande />} />
             <Route path='/logout' element={<LogoutPage />} />
