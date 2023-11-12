@@ -6,6 +6,9 @@ Assurez-vous d'avoir les éléments suivants installés sur votre machine :
 Node.js (avec npm)
 MySQL (ou utilisez XAMPP comme alternative)
 
+Dossier "front" : Contient le code source de l'interface utilisateur React.
+Dossier "src" : Contient le code source du serveur Express.
+
 Cloner le projet depuis GitHub
 
 Étape 1: Installer les dépendances
