@@ -1,0 +1,22 @@
+.menu {
+    font-size: 1.2em;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.activeLink {
+    font-weight: bold;
+    color: #07c5fa;
+}

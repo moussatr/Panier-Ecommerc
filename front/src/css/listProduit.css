@@ -1,0 +1,63 @@
+/* Style de la liste de produits */
+.product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style des éléments de la liste de produits */
+  .product-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-image {
+    max-width: 10px;
+    max-height: 10px;
+    object-fit: cover;
+  }
+  
+  .product-title {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .product-price {
+    color: #ff6600;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .product-description {
+    margin-top: 5px;
+  }
+
+  .checkout-button-panier {
+    /* background-color: #4caf50; Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition de couleur de fond */
+  }
+  
+  .checkout-button:hover {
+    background-color: #45a049; /* Nouvelle couleur de fond au survol */
+  }
+  
+  
+.flash-message {
+  /* background-color: #4caf50; */
+  color: #4caf50;
+  text-align: center;
+  margin-bottom: 10px;
+}
