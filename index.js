@@ -29,7 +29,7 @@ const cors = require('cors');
 
 app.use(cors({
   credentials: true,
-  origin: process.env.CLIENT_ORIGIN || 'http://localhost:3000', // Autorise l'origine de l'application front-end
+  origin: 'http://localhost:3000', // Autorise l'origine de l'application front-end
 }));
 
 
@@ -53,7 +53,7 @@ app.use('/commandes', commandeRouter);
 
 
 
-const port = process.env.NODE_DOCKER_PORT || 3000;
+const port = process.env.PORT || 8000;
 
 app.listen(port, () => {
   console.log(`Serveur en cours d'exécution sur le port ${port}`);
