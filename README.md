@@ -17,7 +17,7 @@ npm install
 
 Étape 2: Configurer la base de données
 Assurez-vous que votre serveur MySQL est en cours d'exécution.
-Créez une base de données nommée ecommerce.
+Créez une base de données nommée db_panier.
 
 Étape 3: Démarrer le backend et le frontend simultanément
 Dans le dossier racine du projet, exécutez la commande suivante :
